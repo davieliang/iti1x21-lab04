@@ -4,8 +4,9 @@ public class PhotoPost extends Post {
   private String caption;
 
   public PhotoPost(String userName, String fileName, String caption) {
-
-    // YOUR CODE HERE
+    super(userName);
+    this.caption = caption;
+    this.fileName = fileName;
 
   }
 
