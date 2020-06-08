@@ -3,9 +3,8 @@ public class TextPost extends Post {
   private String message;
 
   public TextPost(String userName, String message) {
-
-    // YOUR CODE HERE
-
+    super(userName);
+    this.message = message;
   }
 
   public String getMessage() {
@@ -19,8 +18,7 @@ public class TextPost extends Post {
   }
 
   public boolean isPopular() {
-
-    // YOUR CODE HERE
+    return count > 50;
 
   }
 
