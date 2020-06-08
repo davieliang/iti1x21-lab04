@@ -35,7 +35,7 @@ public class Post implements Likeable, Comparable<Post> {
   	}
 
   	public boolean isPopular() {
-		if(getNoOfLikes()>100){
+		if(count>100) {
            		return true;
      
        		return false;
