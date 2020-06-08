@@ -7,10 +7,8 @@ public class Post implements Likeable, Comparable<Post> {
     private Date timeStamp;
     private String userName;
 
-    public Post(String userName) {
-
-      // YOUR CODE HERE
-
+    public Post(String userName) {    
+	this.userName=userName    
     }
 
     public String getUserName() {
@@ -31,14 +29,18 @@ public class Post implements Likeable, Comparable<Post> {
     }
 
   	public int compareTo(Post other) {
-
-  		// YOUR CODE HERE
+		return this.getTimeStamp().compareTo(post.getTimeStamp());
+  	
 
   	}
 
   	public boolean isPopular() {
+		if(getNoOfLikes()>100){
+           		return true;
+     
+       		return false;
 
-  		// YOUR CODE HERE
+  		
 
   	}
 
