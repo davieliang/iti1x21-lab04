@@ -10,14 +10,16 @@ public class NewsFeed {
   public static final int MAX_SIZE = 25;
 
   public NewsFeed() {
-
-    // YOUR CODE HERE
+    count=0;
+    posts=new Post[MAX_SIZE];
 
   }
 
   public void add(Post message) {
-
-    // YOUR CODE HERE
+    if(count<MAX_SIZE) {
+      posts(count) = post;
+      count++;
+        
 
   }
 
@@ -48,14 +50,27 @@ public class NewsFeed {
   }
 
   public NewsFeed getPhotoPost(){
-
-    // YOUR CODE HERE
+    PhotoPost photoPost= new Newsfeed();
+    feed.addPost(photoPost);
+    return feed;
 
   }
 
   public NewsFeed plus(NewsFeed other){
+    int size = other.size();
+    NewsFeed combinationFeed= new NewsFeed();
+    
+    for (int i = 0; i <count; i++){
+      combinationFeed.addPost(posts[i]);
+      
+      for(int j = count;j<MAX_SIZE; j++){
+        if(other.getPost[j]!=null){
+          combinationFeed.addPost(other.getPost(j));
+   } else {
+          break;
 
-    // YOUR CODE HERE
+
+    
 
   }
 
